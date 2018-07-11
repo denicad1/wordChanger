@@ -4,25 +4,38 @@
     var array = new Array("");
     for (var i = 0; i < str.length; i++) {
         //try using a switch statement instead of using 5 if/else if statements
-        switch () {
+        // switch () {
 
-            default:
+        //     default:
+        //  }
+        if (str[i] === "a") {
+            //if/else if statements work. try to see if making a switch case would be cleaner.
+            array[i] = str[i].toUpperCase();
+        }//if
+            else if (str[i] === "e") {
+            array[i] = str[i].toUpperCase();
+        }//else if
+            else if (str[i]==="i") {
+            array[i] = str[i].toUpperCase();
+        }//else if
+            else if (str[i]==="o") {
+            array[i] = str[i].toUpperCase();
         }
-        if (str[i] === "a" ) {
-            //trying to create a new array that has the letters from the original str and the capital letter vowels
-            array[i] = (str[i].toUpperCase());
-        } else {
+            else if (str[i]==="u") {
+            array[i] = str[i].toUpperCase();
+        }
+        else {
             array[i] = str[i];
-        }
+        }//else
         
         
         console.log(array[i]);
         
         
         
-    };
-};// Your code here!
-letterChanger("ant");
+    };//for loop
+};
+letterChanger("amphibian");
 function alpha(c1 = 'a', c2 = 'z') {
     //alphabet to compare it to and pick the letter after it
     var a = 'abcdefghijklmnopqrstuvwxyz'.split('');
