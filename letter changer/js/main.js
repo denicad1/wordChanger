@@ -3,13 +3,9 @@
     str.split('');
     var array = new Array("");
     for (var i = 0; i < str.length; i++) {
-        //try using a switch statement instead of using 5 if/else if statements
-        // switch () {
-
-        //     default:
-        //  }
+        //forget switch case. try to compare consonants to the alphabet variable and get the next letter in the alphabet array
         if (str[i] === "a") {
-            //if/else if statements work. try to see if making a switch case would be cleaner.
+            
             array[i] = str[i].toUpperCase();
         }//if
             else if (str[i] === "e") {
